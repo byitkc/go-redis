@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:7.0.2-bullseye
+    volumes:
+      - /Users/brandonyoung/containers/goPhoto/redis/conf:/usr/local/etc/redis
+      - /Users/brandonyoung/containers/goPhoto/redis/init:/mnt
+    ports:
+      - 6379:6379
+    entrypoint: ["redis-server", "/usr/local/etc/redis/redis.conf"]
