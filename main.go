@@ -32,26 +32,6 @@ func init() {
 }
 
 func main() {
-	// defer c.Close()
-
-	// n, err := c.Do("HMSET", "brandon@byitkc.com", "firstName", "Brandon", "lastName", "Young", "role", "Administrator")
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// a := n.(string)
-	// if a != "OK" {
-	// 	panic(a)
-	// }
-	// // var value1 string
-	// // var value2 string
-	// fmt.Println(a)
-	// r, err := redis.Values(c.Do("HGETALL", "brandon@byitkc.com"))
-	// var u user
-	// redis.ScanStruct(r, &u)
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// fmt.Println(u)
 	ExampleArgs()
 }
 
